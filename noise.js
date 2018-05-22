@@ -27,4 +27,27 @@ $(document).ready(function() {
   $('button.noteB').click(function(){
     $('#bAudio')[0].play();
   });
+
+  //plays when enter notes from key board
+  $('body').keydown(function(event){
+    if (event.keyCode === 65) {
+      $('#aAudio')[0].play();
+    } else if(event.keyCode === 66) {
+      $('#bAudio')[0].play();
+    } else if(event.keyCode === 67) {
+      $('#cAudio')[0].play();
+    } else if(event.keyCode === 68) {
+      $('#dAudio')[0].play();
+    } else if(event.keyCode === 69) {
+      $('#eAudio')[0].play();
+    } else if(event.keyCode === 70) {
+      $('#fAudio')[0].play();
+    } else if(event.keyCode === 71){
+      $('#gAudio')[0].play();
+    } else {
+      $('#cAudio')[0].play();
+      $('#dAudio')[0].play();
+      $('#gAudio')[0].play();
+    }
+  });
 });
